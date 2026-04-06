@@ -1,0 +1,18 @@
+{
+  "name": "factume",
+  "version": "1.0.0",
+  "description": "> Tu parles, on facture. L'IA transcrit, structure, génère un PDF conforme e-invoicing 2026.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "concurrently --names \"BACKEND,EXPO\" --prefix-colors \"cyan,magenta\" \"npm run dev --prefix factume-backend\" \"cross-env EXPO_NO_DOCTOR=1 npm start --prefix factume\"",
+    "install:all": "npm install --prefix factume-backend && npm install --prefix factume"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "cross-env": "^10.1.0"
+  }
+}
